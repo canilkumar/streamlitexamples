@@ -28,4 +28,4 @@ st.write(f"You selected: {select_box}")
 
 select_status = st.sidebar.radio("Covid-19 patient's status", ('Confirmed',
 'Active', 'Recovered', 'Deceased'))
-st.write(f"Covid-19 patient's status": {select_status})
+st.write(f"Covid-19 patient's status: {select_status}")
