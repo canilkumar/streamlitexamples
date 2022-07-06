@@ -1,8 +1,9 @@
 import streamlit as st
+st.title('Welcome to Streamlit!')
 value = st.slider('val')  # this is a widget
 st.write(value, 'squared is', value * value)
 
-st.title('Welcome to Streamlit!')
+
 
 checkbox_one = st.checkbox("Yes")
 
