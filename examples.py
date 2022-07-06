@@ -16,4 +16,11 @@ elif checkbox_two:
 else:
       value = "No value selected" 
 
-st.write(f"you selected: {value}")  
+st.write(f"You selected: {value}")  
+
+select_box = st.sidebar.selectbox(
+
+    "Select Yes or No",
+    ["Yes", "No"]
+)
+st.write(f"You selected: {select_box}")
