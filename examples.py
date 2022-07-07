@@ -1,20 +1,21 @@
 import streamlit as st
-st.title('Welcome to  Anil kumar Streamlit!')
+st.title('Welcome to  Anil kumarStreamlit!')
 value = st.slider('val')  # this is a widget
 st.write(value, 'squared is', value * value)
 
 
 
-checkbox_one = st.checkbox("Yes")
+checkbox_one = st.radio("Yes")
 
-checkbox_two = st.checkbox("No")
+checkbox_two = st.radio("No")
 
 if checkbox_one:
     value = "Yes"
 
-
+elif checkbox_two:
+      value = "No"
 else:
-      value = "No" 
+      value = "No value selected" 
 
 st.write(f"You selected: {value}")  
 
