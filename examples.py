@@ -12,10 +12,9 @@ checkbox_two = st.checkbox("No")
 if checkbox_one:
     value = "Yes"
 
-elif checkbox_two:
-      value = "No"
+
 else:
-      value = "No value selected" 
+      value = "No" 
 
 st.write(f"You selected: {value}")  
 
