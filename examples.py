@@ -5,9 +5,9 @@ st.write(value, 'squared is', value * value)
 
 
 
-checkbox_one = st.radio("Yes")
+checkbox_one = st.checkbox("Yes")
 
-checkbox_two = st.radio("No")
+checkbox_two = st.checkbox("No")
 
 if checkbox_one:
     value = "Yes"
