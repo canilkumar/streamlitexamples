@@ -29,3 +29,7 @@ st.write(f"You selected: {select_box}")
 select_status = st.sidebar.radio("Covid-19 patient's status", ('Confirmed',
 'Active', 'Recovered', 'Deceased'))
 st.write(f"Covid-19 patient's status: {select_status}")
+picture = st.camera_input("Take a picture")
+
+if picture:
+     st.image(picture)
