@@ -1,5 +1,5 @@
 import streamlit as st
-st.title('Welcome to  Kurma Grace Nandini')
+st.title('Welcome to  Anil Kumar')
 value = st.slider('val')  # this is a widget
 st.write(value, 'squared is', value * value)
 
