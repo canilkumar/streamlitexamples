@@ -18,17 +18,17 @@ claim_res_model = load_model('./Claim_Process_1.h5')
 
 callClasification_res_model = load_model('./call_audio.h5')
 
-exclusions_1_res_model = load_model('./exclusion_1a.h5')
-exclusions_2_res_model = load_model('./exclusion_2a.h5')
-exclusions_3_res_model = load_model('./exclusion_3a.h5')
-exclusions_4_res_model = load_model('./exclusion_4a.h5')
-exclusions_5_res_model = load_model('./exclusion_5a.h5')
-exclusions_6_res_model = load_model('./exclusion_6a.h5')
-exclusions_7_res_model = load_model('./exclusion_7a.h5')
-exclusions_8_res_model = load_model('./exclusion_8a.h5')
-exclusions_9_res_model = load_model('./exclusion_9a.h5')
-exclusions_10_res_model = load_model('./exclusion_10a.h5')
-exclusions_11_res_model = load_model('./exclusion_11a.h5')
+exclusions_1_res_model = load_model('./ex_1_1a.h5')
+exclusions_2_res_model = load_model('./ex_2_1a.h5')
+exclusions_3_res_model = load_model('./ex_3_1a.h5')
+exclusions_4_res_model = load_model('./ex_4_1a.h5')
+exclusions_5_res_model = load_model('./ex_5_1a.h5')
+exclusions_6_res_model = load_model('./ex_6_1a.h5')
+exclusions_7_res_model = load_model('./ex_7_1a.h5')
+exclusions_8_res_model = load_model('./ex_8_1a.h5')
+exclusions_9_res_model = load_model('./ex_9_1a.h5')
+exclusions_10_res_model = load_model('./ex_10_1a.h5')
+exclusions_11_res_model = load_model('./ex_11_1a.h5')
 
 #exclu_group_a_res_model = load_model('./Exclu_g_a.h5')
 
@@ -277,10 +277,10 @@ if uploaded_file is not None:
          st.title("Pricing Points Explanation")
 
          daily_price_res = predict_daily_price(featuesAll)
-         st.markdown("daily price explained: "+boldTag(daily_price_res[0])+ daily_price_res[0]+"</b> Confidence: <b>"+str(daily_price_res[1]*100)+"</b>", unsafe_allow_html=True)
+         st.markdown("Daily price explained: "+boldTag(daily_price_res[0])+ daily_price_res[0]+"</b> Confidence: <b>"+str(daily_price_res[1]*100)+"</b>", unsafe_allow_html=True)
          
          monthly_price_res = predict_monthly_price(featuesAll)
-         st.markdown("monthly price explained: "+boldTag(monthly_price_res[0])+ monthly_price_res[0]+"</b> Confidence: <b>"+str(monthly_price_res[1]*100)+"</b>", unsafe_allow_html=True)
+         st.markdown("Monthly price explained: "+boldTag(monthly_price_res[0])+ monthly_price_res[0]+"</b> Confidence: <b>"+str(monthly_price_res[1]*100)+"</b>", unsafe_allow_html=True)
         
         
 
